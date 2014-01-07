@@ -1,0 +1,12 @@
+Host *
+	IdentitiesOnly yes
+
+Host example_host
+        HostName example.com
+        User ubuntu
+        IdentityFile ~/.ssh/my_key.pem
+
+Host *.exampledomain.com
+	User ubuntu
+	IdentityFile ~/.ssh/my_key.pem
+
