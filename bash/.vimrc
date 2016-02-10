@@ -1,6 +1,6 @@
-alias s="git status"
-alias d="git diff"
-alias ds="git diff --cached"
-alias yolo="git push -f"
-alias got="fortune | cowsay; git"
-alias sublime="/opt/SublimeText2/sublime_text"
+filetype plugin on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set number
