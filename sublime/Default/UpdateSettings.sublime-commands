@@ -1,0 +1,3 @@
+[
+    { "caption": "Update settings from gist", "command": "update_user_settings" }
+]
