@@ -2,5 +2,11 @@
 	"color_scheme": "Packages/User/Monokai Extended Bright (Flake8Lint).tmTheme",
 	"scroll_past_end": true,
 	"find_selected_text": true,
-	"show_full_path": true
+	"show_full_path": true,
+	"rulers": [79],
+	"translate_tabs_to_spaces": true,
+	"ensure_newline_at_eof_on_save": true,
+	"shift_tab_unindent": true,
+	"hot_exit": false,
+	"preview_on_click": false
 }
