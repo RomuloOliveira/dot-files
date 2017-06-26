@@ -1,0 +1,13 @@
+[alias]
+	lasts-commits = log --oneline -n 5
+	ahead-of-master = log --oneline origin/master..HEAD
+	last-tag = describe --abbrev=0 --tags
+	autosquash = rebase origin/master --autosquash -i
+	delete-merged-branches = !git branch --merged origin/master | grep -v master | grep -v '*' | xargs git branch -D
+[push]
+	default = simple
+[user]
+	useconfigonly = true
+	name = Rômulo Oliveira
+[merge]
+	tool = meld
