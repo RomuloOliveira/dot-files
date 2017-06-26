@@ -4,12 +4,12 @@ import urllib2
 import sublime
 import sublime_plugin
 
-GIST_URL = u'https://gist.githubusercontent.com/RomuloOliveira/f76f602eabfe8f376915a75366cbf6e1/raw/c642904331c39220caa292e1d4c12a4497944162/settings.json'  # noqa
+GIST_URL = u'https://raw.githubusercontent.com/RomuloOliveira/dot-files/master/sublime/User/Preferences.sublime-settings'  # noqa
 
 
 class UpdateUserSettingsCommand(sublime_plugin.TextCommand):
+    
     def run(self, edit):
-
         gist_settings = self._get_settings_from_gist(GIST_URL)
         sublime_settings = sublime.load_settings(
             'Preferences.sublime-settings'
