@@ -1,8 +1,4 @@
-unix-files
-==========
+dot-files
+=========
 
-Public repository for useful unix files
-
-#### Structure
-
-Structure not defined yet...
+My repository for useful dot files and useful config settings
