@@ -1,14 +1,14 @@
 import json
-import urllib2
+import urllib
 
 import sublime
 import sublime_plugin
 
-GIST_URL = u'https://raw.githubusercontent.com/RomuloOliveira/dot-files/master/sublime/User/Preferences.sublime-settings'  # noqa
+GIST_URL = 'https://raw.githubusercontent.com/RomuloOliveira/dot-files/master/sublime/User/Preferences.sublime-settings'  # noqa
 
 
 class UpdateUserSettingsCommand(sublime_plugin.TextCommand):
-    
+
     def run(self, edit):
         gist_settings = self._get_settings_from_gist(GIST_URL)
         sublime_settings = sublime.load_settings(
@@ -19,9 +19,9 @@ class UpdateUserSettingsCommand(sublime_plugin.TextCommand):
     @staticmethod
     def _get_settings_from_gist(url):
         try:
-            response = urllib2.urlopen(url)
-            settings = json.loads(response.read())
-        except (urllib2.URLError, ValueError) as e:
+            response = urllib.request.urlopen(url)
+            settings = json.loads(response.read().decode('utf-8'))
+        except (urllib.error.URLError, ValueError) as e:
             sublime.error_message('Could not retrieve settings: {}'.format(e))
             raise
 
