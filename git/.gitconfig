@@ -11,3 +11,5 @@
 	name = Rômulo Oliveira
 [merge]
 	tool = meld
+[core]
+	excludesfile = ~/.gitignore_global
