@@ -3,6 +3,11 @@
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
 	"preview_on_click": false,
 	"rulers":
 	[
