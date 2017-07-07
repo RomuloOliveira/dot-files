@@ -3,7 +3,7 @@ alias d="git diff"
 alias ds="git diff --cached"
 alias yolo="git push -f"
 alias jair="pip list --outdated --format=legacy"
-alias rg="rg --no-heading --color ansi"
+alias rg="rg --no-heading --color always"
 
 # Virtualfish - python virtualenv
 eval (python -m virtualfish)
