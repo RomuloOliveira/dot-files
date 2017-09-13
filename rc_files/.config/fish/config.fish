@@ -2,8 +2,11 @@ alias s="git status"
 alias d="git diff"
 alias ds="git diff --cached"
 alias yolo="git push -f"
+alias got="fortune | cowsay; git"
 alias jair="pip list --outdated --format=legacy"
 alias rg="rg --no-heading --color always"
+alias t="teresa"
+alias testdox="pytest --testdox"
 
 # Virtualfish - python virtualenv
 eval (python -m virtualfish)
@@ -46,7 +49,7 @@ function fish_prompt
   echo ' ⟩ '
 end
 
-set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin ~/bin
 status --is-interactive; and source (pyenv init -|psub)
 
 export LC_ALL=en_US.UTF-8
