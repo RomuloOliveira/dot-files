@@ -4,7 +4,7 @@ alias ds="git diff --cached"
 alias yolo="git push -f"
 alias got="fortune | cowsay; git"
 alias jair="pip list --outdated --format=legacy"
-alias rg="rg --no-heading --color always"
+alias rg="rg --no-heading"
 alias t="teresa"
 alias testdox="pytest --testdox"
 
